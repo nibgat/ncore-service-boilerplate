@@ -1,0 +1,19 @@
+{
+    "message-sended-successfully": "E - Posta başarıyla gönderildi.",
+    "error-message": "Hata mesajı",
+    "error-date-formatted": "Hata zamanı ( Formatlanmış )",
+    "error-date-pure": "Hata zamanı ( Saf )",
+    "error-code": "Hata kodu",
+    "unexpected-error-when-login": "Giriş esnasında bir hata oluştu. Hata mesajı:",
+    "unexpected-error-when-register": "Kayıt esnasında beklenmeyen bir hata oluştu. Hata mesajı:",
+    "unexpected-error-when-refresh-token": "Yenileme anahtarı alınırken beklenmeyen bir hata oluştu. Hata mesajı:",
+    "unexpected-error-when-create-reset-password": "Parola sıfırlama isteği oluşturulurken beklenmeyen bir hata oluştu. Hata mesajı:",
+    "unexpected-error-when-update-password-for-reset-password": "Yeni parola güncelleme esnasında beklenmeyen bir hata oluştu. Hata mesajı:",
+    "unexpected-error-when-code-control-for-reset-password": "Kod doğrulama sırasında beklenmeyen bir hata oluştu. Hata mesajı:",
+    "unexpected-error-when-mutation-entry": "Veri girişi sırasında beklenmeyen bir hata oluştu. Hata mesajı:",
+    "graphql-mutation-entry-title-string-error": "Başlık boş olamaz.",
+    "graphql-mutation-entry-tag-string-error": "Etiket boş değer olamaz.",
+    "graphql-mutation-entry-title-length-error": "Başlık uzunluğu maksimum ${0} olmalıdır.",
+    "graphql-mutation-entry-content-length-error": "Başlık uzunluğu maksimum ${0} olmalıdır.",
+    "graphql-mutation-entry-successfully": "Veri girişi başarılı."
+}

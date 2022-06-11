@@ -1,0 +1,19 @@
+{
+    "message-sended-successfully": "E - Mail successfully sended.",
+    "error-message": "Error message",
+    "error-date-formatted": "Error date ( Formatted )",
+    "error-date-pure": "Error date ( Pure )",
+    "error-code": "Error code",
+    "unexpected-error-when-login": "An error occurred in the login. Error message:",
+    "unexpected-error-when-register": "An unexpected error occurred while recording. Error message:",
+    "unexpected-error-when-refresh-token": "An unexpected error occurred while retrieving the refresh token. Error message:",
+    "unexpected-error-when-create-reset-password": "An unexpected error occurred while creating the password reset request. Error message:",
+    "unexpected-error-when-update-password-for-reset-password": "An unexpected error occurred while update password for reset password.. Error message:",
+    "unexpected-error-when-code-control-for-reset-password": "An unexpected error occurred while code validation. Error message:",
+    "unexpected-error-when-mutation-entry": "An unexpected error occurred while data entry. Error message:",
+    "graphql-mutation-entry-title-string-error": "Title cannot be empty.",
+    "graphql-mutation-entry-tag-string-error": "Tag cannot be null.",
+    "graphql-mutation-entry-title-length-error": "Title length must be a maximum of ${0}.",
+    "graphql-mutation-entry-content-length-error": "Content length must be a maximum of ${0}.",
+    "graphql-mutation-entry-successfully": "Data entry successful."
+}

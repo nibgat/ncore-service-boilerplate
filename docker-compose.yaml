@@ -1,0 +1,40 @@
+version: "3.4"
+services:
+  rethinkdb:
+    container_name: RethinkDB
+    build: ./rethinkdb/
+    ports:
+      - YOUR_RETHINKDB_PORT:8080
+    restart: always
+    volumes:
+      - ./rethinkdb/rethinkdb_data:/data/rethinkdb_data
+    healthcheck:
+      test: ["CMD", "curl", "-fk", "https://localhost:8080"]
+      interval: 300s
+      timeout: 400s
+      retries: 10
+  backup:
+    container_name: Backup
+    build: ./backup/
+    restart: always
+    volumes:
+      - ./backup/core:/core
+    depends_on:
+      - rethinkdb
+  YOUR_APP_NAME:
+    container_name: YOUR_APP_NAME
+    build:
+      context: ./app
+      target: production
+      dockerfile: Dockerfile
+    command: yarn start
+    restart: always
+    environment:
+      - NODE_ENV=production
+      - PORT=YOUR_APP_PORT
+      - SERVER_ADDRESS=https://YOUR_DOMAIN
+      - DOMAIN=YOUR_DOMAIN
+    ports:
+      - YOUR_APP_PORT:YOUR_APP_PORT
+    depends_on:
+      - rethinkdb

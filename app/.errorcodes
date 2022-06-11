@@ -1,0 +1,20 @@
+# Login:
+aff9e98806a92741570f3d56a3f8b574=Restful Login General
+
+# Register:
+f913484cb7116155495efdc3e5da4fa3=Restful Register General
+
+# Reset Password:
+ae9810c294ba1f4b1b527caa361e046e=Restful Create Reset Password Event General
+5de637f40215bbaf17cb57d4c4610cfb=Restful Cancel Reset Password General
+82fb4fc49e6f94bc6aacf9912b4d796c=Restful Code Control For Reset Password General
+31e02561c68e4acbacaeb1814b03707f=Restful Update Password For Reset Password General
+
+# Verify:
+5e8c8d54ff575f930e8c63a1e678a6fe=Restful Verify General
+
+# Refresh Token:
+f0bdd974894ae626b04f3eaca4355239=Restful Refresh Token General
+
+# Entry:
+7fa1a608f8eed5e3571d034cc425530c=Graphql Mutation Entry General

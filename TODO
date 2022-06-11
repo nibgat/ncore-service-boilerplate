@@ -1,0 +1,20 @@
+# Todo:
+    * Must be added request limits to endpoints.
+    * momentjs package will be changed to dayjs package.
+
+# Boilerplate Tags:
+YOUR_RETHINKDB_PORT: in the docker-compose files.
+YOUR_APP_DEVELOPMENT_PORT: in the docker-compose.dev.yaml and /app/Dockerfile.
+YOUR_APP_PORT: in the docker-compose.yaml and /app/Dockerfile.
+YOUR_DOMAIN: in the docker-compose.yaml.
+YOUR_COMPANY: in the README.md and /app/package.json.
+YOUR_COMPANY_SHORT_NAME: in the /app/package.json.
+YOUR_APP_NAME: in the README.md, /app/package.json and /app/constants.
+YOUR_APP_DESCRIPTION: in the README.md.
+YOUR_SERVICE_GITHUB_REPO_ADDR: in the /app/package.json.
+YOUR_SMTP_HOST: in the /app/constants.
+YOUR_SMTP_PORT: in the /app/constants.
+YOUR_SMTP_AUTH_USER: in the /app/constants.
+YOUR_SMTP_AUTH_PASS: in the /app/constants.
+YOUR_SMTP_FROM_MAIL: in the /app/constants.
+YOUR_NAUTH_API_KEY: in the /app/constants.
