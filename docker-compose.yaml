@@ -18,7 +18,7 @@ services:
     build: ./backup/
     restart: always
     volumes:
-      - ./backup/core:/core
+      - ./backup/backups:/backups
     depends_on:
       - rethinkdb
   YOUR_APP_NAME:

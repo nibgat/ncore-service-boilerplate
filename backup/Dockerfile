@@ -6,11 +6,11 @@ RUN apt-get install cron nano python3 python3-pip -y
 RUN pip3 install rethinkdb
 
 COPY ./backup.sh /data/
-ADD ./core /core
+ADD ./backups /backups
 RUN touch /var/log/cron.log
 
 RUN chmod -R 777 /data/backup.sh
-RUN chmod -R 777 /core
+RUN chmod -R 777 /backups
 RUN chmod +x /data/backup.sh
 
 RUN echo "* * * * * root sh /data/backup.sh schedule:run >> /var/log/cron.log 2>&1" >> /etc/crontab
