@@ -9,7 +9,7 @@ services:
     volumes:
       - ./rethinkdb/rethinkdb_data:/data/rethinkdb_data
     healthcheck:
-      test: ["CMD", "curl", "-fk", "https://localhost:8080"]
+      test: ["CMD", "curl", "-fk", "http://localhost:8080"]
       interval: 300s
       timeout: 400s
       retries: 10
