@@ -1,10 +1,10 @@
 version: "3.4"
 services:
-  rethinkdb:
-    container_name: RethinkDB
+  rethinkdbYN:
+    container_name: RethinkDBYN
     build: ./rethinkdb/
     ports:
-      - YOUR_RETHINKDB_PORT:8080
+      - 7374:8080
     restart: always
     volumes:
       - ./rethinkdb/rethinkdb_data:/data/rethinkdb_data
@@ -20,9 +20,9 @@ services:
     volumes:
       - ./backup/backups:/backups
     depends_on:
-      - rethinkdb
-  YOUR_APP_NAME:
-    container_name: YOUR_APP_NAME
+      - rethinkdbYN
+  yardimNerede:
+    container_name: YardimNerede
     build:
       context: ./app
       target: production
@@ -31,10 +31,10 @@ services:
     restart: always
     environment:
       - NODE_ENV=production
-      - PORT=YOUR_APP_PORT
-      - SERVER_ADDRESS=https://YOUR_DOMAIN
-      - DOMAIN=YOUR_DOMAIN
+      - PORT=7376
+      - SERVER_ADDRESS=https://yardimnerede.com.tr
+      - DOMAIN=yardimnerede.com.tr
     ports:
-      - YOUR_APP_PORT:YOUR_APP_PORT
+      - 7376:7376
     depends_on:
-      - rethinkdb
+      - rethinkdbYN

@@ -1,5 +1,5 @@
-### YOUR_COMPANY | YOUR_APP_NAME - Service
-YOUR_APP_DESCRIPTION
+### NİBGAT® | Yardım Nerede - Service
+Yardım Nerede for natural disasters.
 
 #### Version:
 ```

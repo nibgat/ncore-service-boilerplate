@@ -10,15 +10,15 @@ RUN yarn build
 RUN #!/bin/bash cp /usr/app/node_modules /usr/app/dist/
 COPY ./locales/variants/* /usr/app/dist/locales/variants/
 ENV NODE_ENV=production
-ENV PORT=YOUR_APP_PORT
-ENV SERVER_ADDRESS=https://YOUR_DOMAIN
-ENV DOMAIN=YOUR_DOMAIN
-EXPOSE YOUR_APP_PORT
+ENV PORT=7376
+ENV SERVER_ADDRESS=https://yardimnerede.com.tr
+ENV DOMAIN=yardimnerede.com.tr
+EXPOSE 7376
 CMD ["yarn", "start"]
 
 FROM base as development
 ENV NODE_ENV=development
-ENV PORT=YOUR_APP_DEVELOPMENT_PORT
+ENV PORT=7375
 ENV SERVER_ADDRESS=http://localhost
-EXPOSE YOUR_APP_DEVELOPMENT_PORT
+EXPOSE 7375
 CMD ["yarn", "dev"]

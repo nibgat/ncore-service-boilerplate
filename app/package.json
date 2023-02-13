@@ -1,7 +1,7 @@
 {
-  "name": "YOUR_APP_NAME-service",
+  "name": "yardimnerede-service",
   "version": "0.1.0-pre-alpha.0",
-  "description": "YOUR_COMPANY | YOUR_APP_NAME - Service",
+  "description": "NİBGAT® | Yardım Nerede - Service",
   "main": "dist/index.js",
   "scripts": {
     "start": "node ./dist/index.js",
@@ -11,13 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "YOUR_SERVICE_GITHUB_REPO_ADDR"
+    "url": "https://github.com/nibgat/yardimnerede-service.git"
   },
   "keywords": [
-    "YOUR_APP_NAME",
-    "YOUR_COMPANY_SHORT_NAME"
+    "yardimnerede",
+    "yardim",
+    "nerede",
+    "help",
+    "natural",
+    "disasters",
+    "nibgat"
   ],
-  "author": "YOUR_COMPANY_SHORT_NAME",
+  "author": "nibgat",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "6.26.0",
